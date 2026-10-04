@@ -86,9 +86,13 @@ frame traces) for `tools/cvxdbg.py`.
 ## Credits
 
 Built with AI assistance (Claude) and the universal-modder toolkit. 
+
 The bundled PAL 60Hz code was created by Ralf@gc-forever on GC Forever forums
+
 Engine names and structure come from the community decompilations of CODE: Veronica X:
 [recvx-decomp (PS2)](https://github.com/AshfordFamily/recvx-decomp) and
 [recvx-gc-decomp](https://github.com/fmil95/recvx-gc-decomp). 
+
 Ghidra + GameCube Loader for analysis
+
 No game code or assets are included.
