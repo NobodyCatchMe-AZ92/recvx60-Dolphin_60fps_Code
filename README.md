@@ -3,6 +3,7 @@ CVX60 - true 60fps for Resident Evil CODE: Veronica X (GameCube, PAL and USA) in
 ================================================================================
 
 **What it does**
+  
   Renders the game at 60fps WITHOUT speeding anything up. The game still runs its logic at
   its native 30 ticks per second; every tick is shown as two frames (an in-between frame,
   then the exact one). Smooth at 60: characters, enemies, the camera, shadows, gun flashes,
