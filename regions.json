@@ -1,0 +1,182 @@
+{
+ "A_njWaitVSync": [
+  "0x80178140",
+  "0x80177778"
+ ],
+ "A_njSetPerspective": [
+  "0x801d4f5c",
+  "0x801d0dcc"
+ ],
+ "A_bhSetLight": [
+  "0x80120b90",
+  "0x80120a78"
+ ],
+ "A_bhControlLight": [
+  "0x8011f8fc",
+  "0x8011f7e4"
+ ],
+ "A_bhAllDrawModel": [
+  "0x8010eb50",
+  "0x8010ea8c"
+ ],
+ "A_bhEtcMirrorDrawModel": [
+  "0x8010f4fc",
+  "0x8010f438"
+ ],
+ "A_bhAllEasyDrawModel": [
+  "0x8010f0c0",
+  "0x8010effc"
+ ],
+ "A_bhDrawScreenFade": [
+  "0x8014f784",
+  "0x8014ee60"
+ ],
+ "A_bhDrawCinesco": [
+  "0x8014fbcc",
+  "0x8014f2a8"
+ ],
+ "A_njSetBlendState": [
+  "0x801d2e80",
+  "0x801cecf0"
+ ],
+ "A_SetCopyFilter": [
+  "0x80178ebc",
+  "0x8017849c"
+ ],
+ "A_GetDrawXfb": [
+  "0x801788f8",
+  "0x80177ed8"
+ ],
+ "A_GXCopyDisp": [
+  "0x801b2778",
+  "0x801ae5ec"
+ ],
+ "A_GXDrawDone": [
+  "0x801b16c4",
+  "0x801ad538"
+ ],
+ "A_TakeSkipFlip": [
+  "0x80177f2c",
+  "0x80177564"
+ ],
+ "A_VISetNextFrameBuffer": [
+  "0x801a30cc",
+  "0x8019f054"
+ ],
+ "A_SwapXfb": [
+  "0x801788e4",
+  "0x80177ec4"
+ ],
+ "A_CriServer": [
+  "0x8024af2c",
+  "0x80246d9c"
+ ],
+ "A_VIWaitForRetrace": [
+  "0x801a1f18",
+  "0x8019dea0"
+ ],
+ "A_VIGetRetraceCount": [
+  "0x801a31b4",
+  "0x8019f13c"
+ ],
+ "A_VIFlush": [
+  "0x801a2f9c",
+  "0x8019ef24"
+ ],
+ "A_bhSysCallGame": [
+  "0x80169ee0",
+  "0x80169554"
+ ],
+ "A_bhControlDoor": [
+  "0x80023568",
+  "0x800234a4"
+ ],
+ "A_bhControlMessage": [
+  "0x80126424",
+  "0x8012617c"
+ ],
+ "A_bhPutModel": [
+  "0x80125bf4",
+  "0x80125a58"
+ ],
+ "A_SITE_MAIN_WAITVSYNC": [
+  "0x8012a514",
+  "0x80129d5c"
+ ],
+ "A_SITE_MS_CONTROLLIGHT": [
+  "0x8010e43c",
+  "0x8010e378"
+ ],
+ "A_SITE_MS_ALLDRAW": [
+  "0x8010e4f4",
+  "0x8010e430"
+ ],
+ "A_SITE_MS_MIRRORDRAW": [
+  "0x8010e504",
+  "0x8010e440"
+ ],
+ "A_SITE_MS_EASYDRAW": [
+  "0x8010e514",
+  "0x8010e450"
+ ],
+ "A_SITE_DOOR_CONTROLDOOR": [
+  "0x8016a948",
+  "0x80169fac"
+ ],
+ "A_CAM_BASE": [
+  "0x80437a20",
+  "0x80433480"
+ ],
+ "A_DOOR_WRK": [
+  "0x802c0dd8",
+  "0x802bc838"
+ ],
+ "A_TASK_TABLE": [
+  "0x802960c0",
+  "0x80291be0"
+ ],
+ "A_R13": [
+  "0x804f50a0",
+  "0x804f0ae0"
+ ],
+ "O_SYSP": [
+  "0x7af4",
+  "0x7af4"
+ ],
+ "O_PLP": [
+  "0x7aec",
+  "0x7aec"
+ ],
+ "O_LAST_RETRACE": [
+  "0x7b48",
+  "0x7b48"
+ ],
+ "O_VSYNC_INTERVAL": [
+  "0x72f4",
+  "0x7314"
+ ],
+ "O_VSYNC_MODE": [
+  "0x72ec",
+  "0x730c"
+ ],
+ "O_DRAW_MODE": [
+  "0x727a",
+  "0x729a"
+ ],
+ "O_PL_SLEEP": [
+  "0x7498",
+  "0x74b8"
+ ],
+ "O_TICKS": [
+  "0x730c",
+  "0x732c"
+ ],
+ "O_RETRACE": [
+  "0x6f4c",
+  "0x6f74"
+ ],
+ "O_XFB_INDEX": [
+  "0x72dc",
+  "0x72fc"
+ ]
+}
