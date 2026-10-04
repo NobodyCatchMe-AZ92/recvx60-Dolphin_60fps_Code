@@ -13,26 +13,35 @@ room, with about one extra frame (16 ms) of display latency.
 ## Requirements
 
 - Resident Evil CODE: Veronica X, your own disc image (Disc 1 and Disc 2):
-  - **PAL (GCDP08)**: use `cvx60_ar.txt`;
-  - **USA (GCDE08)**: use `cvx60_usa_ar.txt`.
+  - **PAL (GCDP08)**: use `CVX60_GCDP08.ini`;
+  - **USA (GCDE08)**: use `CVX60_GCDE08.ini`.
 - Dolphin 5.0-21460 or newer (tested on 5.0-21460, JIT64, D3D11).
-- PAL only: the game must run in **60Hz** mode: enable a PAL 60Hz code (e.g. "Enable 60hz Output for PAL
+- For PAL Users: the game must run in **60Hz** mode: enable a PAL 60Hz code (e.g. "Enable 60hz Output for PAL
   version", hooks `0x80178560`). CVX60 does nothing in 50Hz mode. The USA version is 60Hz already.
-- USA only: don't combine with a "Door Skip" code that patches `0x80169FAC`; that's the instruction CVX60 hooks
-  for door transitions.
 - Cheats enabled (Config > General > Enable Cheats).
-- Recommended: VSync on or a G-Sync/FreeSync display. On a high-refresh monitor without VSync, 60fps frames
-  land on an uneven number of refreshes and look judder-y (same as vanilla 30fps).
 
 ## Install
 
-1. Open `GameSettings/GCDP08.ini` (PAL) or `GCDE08.ini` (USA) in your Dolphin user folder (or right-click the game > Properties >
-   AR Codes > Add) and paste the contents of `cvx60_ar.txt` as a new code named
-   `60 FPS (interpolated) [CVX60]`.
-2. Enable it together with your 60Hz code and boot the game.
+  Option A) Through Dolphin (easiest)
+     1. Right-click the game in Dolphin > Properties > AR Codes > Add New Code.
+     2. PAL only: name it "Enable 60hz Output for PAL version" and paste the 7 code lines
+        under that heading in CVX60_GCDP08.ini. Save.
+     3. Add New Code again, name it "60 FPS (interpolated) [CVX60]" and paste all the lines
+        under that heading from the INI for your version (2,000-3,000 lines). Save.
+     4. Tick the code(s) and start the game.
 
-`deploy.py [--usa] --enable / --disable / --remove` does the INI edit for you (it only touches its own entry).
+  Option B) Edit the game's INI file
+     1. Open your Dolphin user folder (Windows: Documents\Dolphin Emulator),
+        then GameSettings\GCDP08.ini (PAL) or GameSettings\GCDE08.ini (USA); create it if needed.
+     2. If the file is new or empty, copy the matching CVX60_GCDP08.ini / CVX60_GCDE08.ini into it.
+        If it already has an [ActionReplay] section, paste the two codes at the end of that
+        section and add their two "$" names to [ActionReplay_Enabled]. Don't create a
+        second [ActionReplay] section.
+     3. Start the game.
 
+  Changes to cheats take effect when the game boots, so restart the game after adding them.
+
+  
 ## What it does (technical)
 
 - Hooks the main loop's `njWaitVSync` call, the logic/draw seam in `bhMainSequence`, the three draw-all
@@ -72,12 +81,14 @@ room, with about one extra frame (16 ms) of display latency.
 
 Requires Python 3.10+ with `pip install ziglang pyelftools` (plus `capstone` is optional). `build.py` compiles `cvx60.c` with Zig's clang (`powerpc-freestanding-eabihf`, `-mcpu=750`), links it at
 `0x817B7000` and emits the AR code. `build.py --usa` builds the USA code; `build.py --lab` adds diagnostics and a test harness (pad injection,
-frame traces) for `tools/cvxdbg.py`; don't ship the lab build.
+frame traces) for `tools/cvxdbg.py`.
 
 ## Credits
 
-Built with AI assistance (Claude) and the universal-modder toolkit. Engine names and structure come from
-the community decompilations of CODE: Veronica X:
+Built with AI assistance (Claude) and the universal-modder toolkit. 
+The bundled PAL 60Hz code was created by Ralf@gc-forever on GC Forever forums
+Engine names and structure come from the community decompilations of CODE: Veronica X:
 [recvx-decomp (PS2)](https://github.com/AshfordFamily/recvx-decomp) and
-[recvx-gc-decomp](https://github.com/fmil95/recvx-gc-decomp). Ghidra + GameCube Loader for analysis.
+[recvx-gc-decomp](https://github.com/fmil95/recvx-gc-decomp). 
+Ghidra + GameCube Loader for analysis
 No game code or assets are included.
