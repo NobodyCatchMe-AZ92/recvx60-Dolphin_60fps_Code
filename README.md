@@ -22,7 +22,7 @@ room, with about one extra frame (16 ms) of display latency.
 
 ## Install
 
-  Option A) Through Dolphin (easiest)
+- **Option A) Through Dolphin (easiest)**
      1. Right-click the game in Dolphin > Properties > AR Codes > Add New Code.
      2. PAL only: name it "Enable 60hz Output for PAL version" and paste the 7 code lines
         under that heading in CVX60_GCDP08.ini. Save.
@@ -30,7 +30,7 @@ room, with about one extra frame (16 ms) of display latency.
         under that heading from the INI for your version (2,000-3,000 lines). Save.
      4. Tick the code(s) and start the game.
 
-  Option B) Edit the game's INI file
+- **Option B) Edit the game's INI file**
      1. Open your Dolphin user folder (Windows: Documents\Dolphin Emulator),
         then GameSettings\GCDP08.ini (PAL) or GameSettings\GCDE08.ini (USA); create it if needed.
      2. If the file is new or empty, copy the matching CVX60_GCDP08.ini / CVX60_GCDE08.ini into it.
