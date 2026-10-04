@@ -2,7 +2,7 @@
 CVX60 - true 60fps for Resident Evil CODE: Veronica X (GameCube, PAL and USA) in Dolphin
 ================================================================================
 
-What it does
+**What it does**
   Renders the game at 60fps WITHOUT speeding anything up. The game still runs its logic at
   its native 30 ticks per second; every tick is shown as two frames (an in-between frame,
   then the exact one). Smooth at 60: characters, enemies, the camera, shadows, gun flashes,
@@ -10,7 +10,7 @@ What it does
   transitions.
   Menus, inventory, map and FMVs stay at 30.
 
-Requirements
+**Requirements**
   - Resident Evil CODE: Veronica X (Disc 1 and Disc 2), one of:
       PAL / Europe, game ID GCDP08  -> use CVX60_GCDP08.ini
       USA,          game ID GCDE08  -> use CVX60_GCDE08.ini
@@ -24,7 +24,7 @@ Requirements
   - USA only: Enabling a "Door Skip" code together with CVX60 may
      cause issues, although brief tests looked fine (they patch the same spot).
 
-Install (pick one)
+**Install (pick one)**
 
   A) Through Dolphin (easiest)
      1. Right-click the game in Dolphin > Properties > AR Codes > Add New Code.
@@ -45,19 +45,19 @@ Install (pick one)
 
   Changes to cheats take effect when the game boots, so restart the game after adding them.
 
-Tips
+**Tips**
   - Savestates include the mod itself: after updating CVX60 to a new version, make new savestates.
     A savestate made with an older version may freeze. Memory card (typewriter) saves are unaffected.
   - To compare with the original, untick the CVX60 code and restart the game.
 
-Known limits
+**Known limits**
   - Some blood splats/trails, shell casings, a few special effects and all menus update at 30.
   - USA: in very crowded scenes some characters may be drawn without smoothing (less free memory
     on that version); the player always is.
   - Mirror rooms, scope/first-person views and message boxes run at the original 30fps.
   - About one extra frame (16 ms) of display latency.
 
-Credits
+**Credits**
   Built with AI assistance (Claude). Engine knowledge from the community decompilations of
   CODE: Veronica X: recvx-decomp (PS2) and recvx-gc-decomp (GameCube). Analysis with Ghidra
   and the GameCube Loader. 
